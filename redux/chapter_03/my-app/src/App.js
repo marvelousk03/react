@@ -8,8 +8,8 @@ class App extends Component {
     const isValid = true;
     return (
       <div>
-        {/* <Products />
-        <Button variant="primary" disabled={!isValid}>Default</Button> */}
+        <Products />
+        <Button variant="primary" disabled={!isValid}>Default</Button>
 
         <Rating rating="1" />
         <Rating rating="2" />
