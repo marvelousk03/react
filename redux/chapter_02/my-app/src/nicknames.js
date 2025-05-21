@@ -1,15 +1,24 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 class Nicknames extends Component {
-    render () {
-        let nicknames = ["Marve", "MK", "Marvel", "Marvie"];
+    render() {
+        let nicknames = [
+            "Marve",
+            "MK",
+            "Marvel",
+            "Marvie"
+        ];
 
-        let nameLoop = nicknames.map(name =>{
-            return name
+        let nameLoop = nicknames.map(name => {
+            return <li key={nicknames.toString()}>{name}</li>
+
         });
 
         return (
-            <div><h3>{"" + nameLoop}</h3></div>
+            <div>
+                <h2>Nicknames:</h2>
+                <ul>{nameLoop}</ul>
+            </div>
         )
     }
 }
