@@ -71,39 +71,38 @@
 
 import React, { Component } from 'react';
 import Products from './Products';
-import Rating from './Rating';
 import { Button, Carousel } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Rating from './Rating';
 
-function App() {
-  const isValid = true;
+class App extends Component {
+  render() {
+    const isValid = true;
+    return (
+      <div>
+        <Products />
+        <Button variant="primary" disabled={!isValid}>Default</Button>
 
-  return (
-    <div className="container mt-4">
-      <h1>Carousel + Your Code</h1>
+        <Rating rating="1" />
+        <Rating rating="2" />
+        <Rating rating="3" />
+        <Rating rating="4" />
+        <Rating rating="5" />
 
-      <Products />
+        <Carousel className="mb-4">
+          <Carousel.Item>
+            <img className="d-block w-100" src="/caro.jpg" alt="Slide 1" />
+            <Carousel.Caption><h3>First Slide</h3></Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="/images.jpg" alt="Slide 2" />
+            <Carousel.Caption><h3>Second Slide</h3></Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
 
-      <Button variant="primary" disabled={!isValid} className="mb-3">
-        Default
-      </Button>
-
-      <div className="mb-4">
-        {[1, 2, 3, 4, 5].map(r => <Rating key={r} rating={r} />)}
       </div>
-
-      <Carousel className="mb-4">
-        <Carousel.Item>
-          <img className="d-block w-100" src="/caro.jpg" alt="Slide 1" />
-          <Carousel.Caption><h3>First Slide</h3></Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src="/images.jpg" alt="Slide 2" />
-          <Carousel.Caption><h3>Second Slide</h3></Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
+
