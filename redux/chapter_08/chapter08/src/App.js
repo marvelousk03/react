@@ -40,7 +40,7 @@ class Header extends Component {
             <Route path="/github" component={GitHub} />
             <Route exact path="/" component={Home} />
             <Route exact path="/dessert" component={Dessert} />
-            <Route exact path="/contact" component={Contact} /> {/* ✅ Contact route */}
+            <Route exact path="/contact" component={Contact} /> 
             <Route path="/*" component={NotFound} />
           </Switch>
         </div>

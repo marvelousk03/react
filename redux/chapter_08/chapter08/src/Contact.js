@@ -8,7 +8,7 @@ class Contact extends Component {
         <img
           src="/image.png" 
           alt="Team Members"
-          style={{ maxWidth: '100%', height: 'auto' }}
+          style={{ maxWidth: '25%', height: '50%' }}
         />
       </div>
     );
