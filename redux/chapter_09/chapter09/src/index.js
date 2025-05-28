@@ -10,7 +10,13 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-  //firebase config values
+  apiKey: "AIzaSyDCG3iCXp4_GKZGXarBycDxxFsqdKHaTN0",
+  authDomain: "crud-project-18b49.firebaseapp.com",
+  projectId: "crud-project-18b49",
+  storageBucket: "crud-project-18b49.firebasestorage.app",
+  messagingSenderId: "805799259675",
+  appId: "1:805799259675:web:dc08578ac5dc10b6e412be",
+  measurementId: "G-5QDHNFJVNF"
 };
 
 firebase.initializeApp(firebaseConfig);

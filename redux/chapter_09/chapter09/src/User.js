@@ -99,8 +99,7 @@ class User extends Component {
                         <Modal.Title>Delete User</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <p>Are you sure you want to delete
-                            {this.state.selectedUser.username}?</p>
+                        <p>Are you sure you want to delete {this.state.selectedUser.username}?</p>
                         <hr />
                     </Modal.Body>
                     <Modal.Footer>
