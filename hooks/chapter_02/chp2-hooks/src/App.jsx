@@ -12,6 +12,8 @@ function App() {
     imageUrl:'https://picsum.photos/200/300'
   }
 
+  console.log(formatName(user));
+
   return (
     <div>
       <Products />
