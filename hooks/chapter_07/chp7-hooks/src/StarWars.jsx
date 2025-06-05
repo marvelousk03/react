@@ -3,7 +3,7 @@ import axios from 'axios' // npm install axios
 
 function fetchData(searchTerm) {
     return new Promise((resolve, reject) => {
-        axios.get(`https://swapi.dev/api/people/?search=${searchTerm}`)
+        axios.get('https://swapi.py4e.com/api/people/?search=${searchTerm}')
             .then((res) => {
                 console.log(res.data.results)
                 resolve(res.data.results)
