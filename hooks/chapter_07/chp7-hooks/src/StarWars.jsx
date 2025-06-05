@@ -40,6 +40,7 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './Starwars.css';
 
 function fetchData(searchTerm) {
     return axios.get(`https://swapi.py4e.com/api/people/?search=${searchTerm}`)
